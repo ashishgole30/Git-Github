@@ -1,0 +1,35 @@
+✅ METHOD 1 — Start Locally 
+You already have files or you write code first.
+
+Step 1 — Go inside project folder
+command : cd project-folder-name
+
+Step 2 — Initialize Git
+command : git init
+
+Now it becomes a Git repository.
+
+Step 3 — Add files to staging
+Add everything:
+command : git add .
+   OR 
+specific file:
+command : git add filename.java
+
+Step 4 — Commit
+command : git commit -m "Your meaningful commit message"
+Now snapshot is saved locally.
+
+Step 5 — Create repo on GitHub
+Then connect it:
+command : git remote add origin https://github.com/username/repo-name.git
+
+Step 6 — Set branch name
+command : git branch -M main
+
+Step 7 — Push to GitHub
+command : git push -u origin main
+After first push, next time just:
+command : git push
+
+DONE.

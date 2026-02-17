@@ -1,0 +1,183 @@
+🚀 COMPLETE GIT & GITHUB  NOTES
+
+🟢 1. Basic Terminal Commands
+
+cd
+Change directory (move into a folder)
+cd folder-name
+
+cd ..
+Go one folder back
+
+ls
+List files (Mac/Linux/Git Bash)
+
+dir
+List files (Windows PowerShell / CMD)
+
+ls -a
+Show hidden files (like .git)
+
+mkdir
+Create a new folder
+mkdir folder-name
+
+clear
+Clear terminal (Mac/Linux)
+
+PowerShell:
+cls
+
+🟢 2. What is Git?
+Git = Version Control System
+Tracks changes in your project over time.
+
+🟢 3. What is GitHub?
+GitHub = Cloud platform that stores Git repositories online.
+
+🟢 4. Local vs Remote Repository
+Local Repository = On your laptop
+Remote Repository = On GitHub
+
+🟢 5. Git Init (Start Git in a Folder)
+Used to create a Git repository locally.
+git init
+Creates hidden .git folder.
+
+🟢 6. Git Status
+Shows current state of files.
+git status
+File states:
+Untracked → New file
+Modified → Changed file
+Staged → Ready to commit
+Unmodified → No change
+
+🟢 7. Git Add
+Moves file to staging area.
+git add file-name
+Add all files:
+git add .
+
+🟢 8. Git Commit
+Saves snapshot of staged files.
+git commit -m "meaningful message"
+
+🟢 9. Git Log
+Shows commit history.
+git log
+
+🟢 10. Git Clone
+Copies GitHub repo to your local machine.
+Steps:
+Go to GitHub repo
+Click Code
+Copy HTTPS link
+Run:
+git clone https://github.com/username/repo-name.git
+
+🟢 11. Git Remote
+Add connection to GitHub repo.
+git remote add origin https://github.com/username/repo-name.git
+Check remote:
+git remote -v
+
+🟢 12. Git Push
+Uploads local commits to GitHub.
+First time:
+git push -u origin main
+After that:
+git push
+
+🟢 13. Git Pull
+Downloads changes from GitHub.
+git pull origin main
+
+🟢 14. Branch Commands
+Check branches:
+git branch
+
+Create new branch:
+git branch branch-name
+
+Create + switch:
+git checkout -b branch-name
+
+Switch branch:
+git checkout branch-name
+
+Delete branch:
+git branch -d branch-name
+
+Rename branch:
+git branch -M main
+
+🟢 15. Merge Branch
+Merge into current branch:
+git merge branch-name
+
+Compare branches:
+git diff branch-name
+
+🟢 16. Pull Request (PR)
+PR = Request to merge changes into another branch on GitHub.
+Steps:
+Push branch
+Go to GitHub
+Click Compare & Pull Request
+Review
+Merge
+
+🟢 17. Git Workflow (Local First Method)
+Write code
+git init
+git add .
+git commit -m "message"
+Create GitHub repo
+git remote add origin link
+git branch -M main
+git push -u origin main
+
+🟢 18. Git Workflow (Remote First Method)
+Create repo on GitHub
+git clone link
+cd repo-name
+Add file
+git add .
+git commit -m "message"
+git push
+
+🟢 19. Undo Changes
+Unstage file:
+git reset file-name
+
+Undo last commit (keep changes):
+git reset HEAD~1
+
+Undo last commit (delete changes permanently):
+git reset --hard HEAD~1
+
+🟢 20. Merge Conflict
+Happens when Git cannot automatically merge changes.
+Fix:
+Edit file manually
+Remove conflict markers
+git add .
+git commit
+
+🟢 21. Fork
+Fork = Copy someone else's repo to your GitHub account.
+Used in open source contributions.
+
+🟢 22. Important Concepts
+Working Directory → Where you edit files
+Staging Area → Prepared for commit
+Repository → Saved commits
+Flow: Edit → Add → Commit → Push
+
+🟢 23. Important Truths
+Git does NOT track empty folders
+GitHub updates only after git push
+Clone automatically sets remote
+Commit happens locally
+Push sends commits to GitHub

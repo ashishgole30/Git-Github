@@ -1,0 +1,28 @@
+✅ METHOD 2 — Create GitHub Repo First (Team / Professional Way)
+
+Step 1 — Create repo on GitHub
+
+Step 2 — Clone it to your system
+command : git clone https://github.com/username/repo-name.git
+This automatically:
+Downloads repo
+Creates folder
+Initializes Git
+Connects remote
+
+Step 3 — Go inside cloned folder
+command : cd repo-name
+
+Step 4 — Add your files / write code
+Create files normally.
+
+Step 5 — Add changes
+command : git add .
+
+Step 6 — Commit
+command : git commit -m "Added new feature"
+
+Step 7 — Push
+command : git push
+
+
